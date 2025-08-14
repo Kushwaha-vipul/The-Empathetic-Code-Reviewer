@@ -3,7 +3,6 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// Helper to call Gemini with retries and fallback
 async function getAIResponse(prompt) {
   let models = ["gemini-2.0-flash", "gemini-2.5-pro"];
 
@@ -19,8 +18,8 @@ async function getAIResponse(prompt) {
           console.warn(`⚠️ Model overloaded. Retrying in 2s...`);
           await new Promise(res => setTimeout(res, 2000));
         } else if (attempt === 3) {
-          console.error(`❌ Failed with model: ${modelName}`, error.message);
-          break; // Try next model
+          console.error(`Failed with model: ${modelName}`, error.message);
+          break; 
         }
       }
     }

@@ -1,6 +1,9 @@
-# AI Code Corrector
-An AI-powered tool to review and optimize source code for efficiency, readability, and adherence to best practices using the OpenAI API.
+# The Empathetic Code Reviewer
 
+An AI-powered tool to review and optimize source code for efficiency, readability, and best practices using the OpenAI API. It transforms critical feedback into constructive, empathetic guidance.
+
+## Tagline
+Transforming Critical Feedback into Constructive Growth.
 ## Features
 - AI-powered code review for best practices and performance.
 - Real-time feedback using MERN stack integration.
@@ -13,12 +16,7 @@ An AI-powered tool to review and optimize source code for efficiency, readabilit
 - Database: MongoDB
 - AI Integration: OpenAI API
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/ai-code-corrector.git
-   cd ai-code-corrector
+# How you acccess the member of Darwix AI
 
 Install dependencies for backend:
 cd backend
@@ -51,10 +49,5 @@ frontend/      → React.js UI
 backend/       → Node.js + Express server
 models/        → MongoDB schemas
 routes/        → API endpoints
-
-## Future Improvements
-- Support for multiple programming languages.
-- Offline mode for local code review.
-- Code auto-correction with AI.
 
 

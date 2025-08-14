@@ -8,7 +8,7 @@ module.exports.getResponse = async (req, res) => {
     }
 
     const prompt = `
-You are a senior JavaScript code reviewer.
+a senior JavaScript code reviewer.
 Review the following code and:
 1. Point out issues or improvements.
 2. Suggest better practices.
@@ -28,11 +28,11 @@ ${code}
     console.error("AI Controller Error:", error.message);
 
     if (error.message.includes("overloaded")) {
-      return res.status(503).json({ error: "The AI service is overloaded. Please try again in a moment." });
+      return res.status(503).json({ error: " Please try again in a moment." });
     }
 
     if (error.message.includes("unavailable")) {
-      return res.status(503).json({ error: "The AI service is currently unavailable. Please try again later." });
+      return res.status(503).json({ error: " Please try again later." });
     }
 
     res.status(500).json({ error: "Internal Server Error" });
