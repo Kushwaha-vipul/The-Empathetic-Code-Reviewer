@@ -51,3 +51,5 @@ models/        → MongoDB schemas
 routes/        → API endpoints
 
 
+# Darwix AI  team keep it :
+ I  used initial state as a example which is given in assessment , so it already appear ins starting for your convence so you do not paste it , it already appear in frontend when you run it .

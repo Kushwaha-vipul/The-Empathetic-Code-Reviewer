@@ -1,40 +1,47 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-html,
-body,
-#root {
+html, body, #root {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root, main {
+  height: 100vh;
+  width: 100vw;
 }
 
 main {
-  height: 100%;
-  width: 100%;
   padding: 1.5rem;
   display: flex;
   gap: 1rem;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 main .left,
 main .right {
-  height: 100%;
+  min-height: 700px; /* Increased for visibility */
   flex-basis: 50%;
   border-radius: 0.7rem;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
 main .left {
   background-color: #000000;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 2px solid red; /* DEBUG border - remove after confirm */
 }
 
 .left .code,
 .code pre,
 .code pre code {
-  height: 100%;
+  flex-grow: 1;
   width: 100%;
   margin: 0;
   border-radius: 0.7rem;
@@ -52,12 +59,15 @@ main .left .review {
   cursor: pointer;
   user-select: none;
   border-radius: 0.7rem;
+  z-index: 10;
 }
-
 
 main .right {
   background-color: #343434;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   overflow: auto;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  border: 2px solid blue; /* DEBUG border - remove after confirm */
 }
