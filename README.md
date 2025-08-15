@@ -16,9 +16,16 @@ Transforming Critical Feedback into Constructive Growth.
 - Database: MongoDB
 - AI Integration: OpenAI API
 
+
+#Screenshot of Output we got 
+<img width="1903" height="884" alt="Screenshot 2025-08-15 094744" src="https://github.com/user-attachments/assets/ebf38e91-df7c-427a-a85f-e3e5f6c9c493" />
+<img width="942" height="872" alt="Screenshot 2025-08-15 094759" src="https://github.com/user-attachments/assets/5bfd2f5e-1562-4744-8a77-3fcef7a8042e" />
+
+
 # How you acccess the member of Darwix AI
 
-Install dependencies for backend:
+
+
 cd backend
 npm install
 
